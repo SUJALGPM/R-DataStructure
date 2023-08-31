@@ -82,6 +82,7 @@ str(data2)
 sort(data$fees,decreasing = FALSE)
 data2[order(data2$fees,decreasing=FALSE),]
 data2[order(data2$fees,decreasing=TRUE),]
+unique(data2)
 
 #Join Operation on dataframe....
 join1<-data.frame(id=c(1,2,3,4),name=c("sujal","shreeya","harsha","faisal"),dpt=c("rubber","computer","eletrical","It"))
