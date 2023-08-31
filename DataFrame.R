@@ -80,6 +80,8 @@ nrow(data2)
 ncol(data2)
 str(data2)
 sort(data$fees,decreasing = FALSE)
+order(data2)
+rank(data2)
 data2[order(data2$fees,decreasing=FALSE),]
 data2[order(data2$fees,decreasing=TRUE),]
 unique(data2)
