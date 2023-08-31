@@ -31,3 +31,6 @@ is.factor(data)
 length(data)
 levels(data)
 
+#Creating factors using gl() in R
+sum<-gl(4,2,labels=c("sujal","shreeya","Faisal","Harsha"))
+sum
