@@ -20,6 +20,7 @@ data[data==11]<-12
 data[data>5]<-2
 data[data<5]<-10
 data[data!=5]<-9
+data[data%%2==0]<-5
 
 #New rows add....
 r1<-c(11,12,13,14)
@@ -30,6 +31,10 @@ new
 c1<-c(10,20,30,40)
 new1<-cbind(new,abbas=c1)
 new1
+
+#Merge 3 matrix by row-wise or col-wise
+rbind(a,b)
+cbind(a,b)
 
 #Tranporse() Function...swap value
 #row will take col space
@@ -80,3 +85,8 @@ length(a)
 length(b)
 nrow(a)
 ncol(a)
+rowSums(new1)
+colSums(new1)
+min(new1)
+max(new1)
+is.matrix(new1)
