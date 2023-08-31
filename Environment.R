@@ -1,6 +1,5 @@
 #*******************************Environment***********************************
 
-
 #1. To check current env
 environment()
 
