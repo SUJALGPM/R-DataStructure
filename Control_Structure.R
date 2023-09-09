@@ -229,7 +229,7 @@ lapply(vec,user2)
 sqrt(2)
 
 
-#***************************Lapply(data,fun)***************************
+#***************************Sapply(data,fun)***************************
 
 # 1.Perform sapply() fucntion with matrix...
 a<-matrix(1:12,nrow=3)
