@@ -24,7 +24,7 @@ is.data.frame(b)
 #*****************************************WRITE-EXCEL FILE*****************************************
 
 #Step1 : To write data.frame into excel file specifies the location.
-#Step2 : Write the data using writexl() package that provide write_xlsx() function.
+#Step2 : Write the data using writexl() package that provide writexl() function.
 data<-data.frame(id=c(1,2,3,4),name=c("anjali","aliza","aditi",'sneha'),dpt=c("e2","r3","n3","y4"))
 write_xlsx(data,path = "S:/PROGRAMS/Excel_File/Note1.xlsx")
 
