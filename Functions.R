@@ -119,4 +119,43 @@ cal<-function(){
 
 cal()
 
+# 10.Lazy Evaluation function...
+# Arguments to functions are evaluated lazily, which means so they are evaluated only when needed by the function body.
+
+add<-function(a,b){
+  print(a*2)
+  print(a)
+  print(b)
+}
+
+add(4)
+
+#*******************************Built-In Function******************************
+
+# 1.Math Functions...
+ceiling(2.5)
+floor(2.5)
+abs(-5)
+sqrt(4)
+cos(4)
+sin(5)
+tan(5)
+trunc(2.5,1.5,3.7)
+round(3.14159265,3)
+log(10)
+log10(10)
+exp(10)
+
+# 2.String Functions...
+substr("Mynameissujaldingankar",start = 9,stop = 13)
+strsplit("Mynameissujaldingankar","s")
+toupper("iamstrong")
+tolower("IAMSTRONG")
+a<-"My name is shadow dingankar"
+sub("shadow","sujal",a)
+b<-c('abc','bacabc','bac','abc')
+grep("abc",b)
+grepl("abc",b)
+nchar(a)
+paste("MY NAME IS","SUJAL DINGANKAR")
 
