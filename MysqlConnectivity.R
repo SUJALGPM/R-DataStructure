@@ -81,9 +81,50 @@ a1<-dbSendQuery(con,"Select * from student")
 a2<-fetch(a1)
 
 
-#*****************************************Drop-Operation*****************************************
+#*****************************************Drop-Operation*******************************************
 
 result<-dbSendQuery(con,'DROP table if exists team1')
 dbListTables(con)
 
 result<-dbSendQuery(con,'DROP database if exists book')
+
+#*****************************************Additional-Command*****************************************
+
+#Note: Get connection summary.
+summary(con)
+
+#Note: Get Database information.
+dbGetInfo(con)
+
+#Note: Show tables in connected database,
+dbListTables(con)
+
+#Note: Show fields in any table.
+dbListFields(con,"student")
+
+#Note: Remove any table from database.
+dbRemoveTable(con,"team")
+
+#Note: Read entire table from database.
+dbReadTable(con,"student")
+
+#Note: Get number of rows fetched.
+data<-dbSendQuery(con,"Select * from student where sfees<3000")
+dbGetRowCount(data)
+
+#Note: Get count of number of rows affected by query.
+dbGetRowsAffected(data)
+
+#Note: Overwrite table in the database.
+dbWriteTable(con,"school","newData",overwrite=TRUE)
+
+#Note: Append data to the table in the database.
+dbWriteTable(con,"school","newData",append=TRUE)
+
+#Note: Clear data/free resource.
+data<-dbSendQuery(con,"select * from school")
+result<-fetch(data)
+dbClearResult(data)
+
+#Note:  Disconnect from database[Connection].
+dbDisconnect(con)
