@@ -6,6 +6,7 @@
 # Plot() is basically used to create plot a scatter plot or line graph of 2
 # vectors. i.e it is used to plot 2 vectors against each other.
 # It develops a 2-dimensional graph.
+# PLot is generic function is used to create graph for different types of input objects.
 
 # syntax: plot(x, y, type, main, xlab, ylab, col, cex, pch, lwd, lty).
 #1. x and y are two input vectors vectors corresponds corresponds to X and Y axis resp.
@@ -56,11 +57,14 @@ jpeg(file="whether.jpeg")
 #2. Save as png image.
 png(file="whether.png",width = 300,height = 300,res = 700) 
 
-#4. Save as pdf.
+#3. Save as pdf.
 pdf(file="whether.pdf8")
 
-#3. Save as bmp image.
+#4. Save as bmp image.
 bmp(file="whether.bmp")
+
+#5. Save as svg image.
+svg(file="whether.svg")
 
 
 #*****************************************Plot-Analysis*****************************************
