@@ -7,6 +7,7 @@
 # vectors. i.e it is used to plot 2 vectors against each other.
 # It develops a 2-dimensional graph.
 # PLot is generic function is used to create graph for different types of input objects.
+# Additional is that create plot of temp2020, than create points() of 2021 temp and create lines() 2022 temp.
 
 # syntax: plot(x, y, type, main, xlab, ylab, col, cex, pch, lwd, lty).
 #1. x and y are two input vectors vectors corresponds corresponds to X and Y axis resp.
