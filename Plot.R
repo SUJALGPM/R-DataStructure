@@ -59,7 +59,7 @@ jpeg(file="whether.jpeg")
 png(file="whether.png",width = 300,height = 300,res = 700) 
 
 #3. Save as pdf.
-pdf(file="whether.pdf8")
+pdf(file="whether.pdf")
 
 #4. Save as bmp image.
 bmp(file="whether.bmp")
