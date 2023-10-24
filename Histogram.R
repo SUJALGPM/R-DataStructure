@@ -8,8 +8,8 @@
 
 # Syntax :- hist(v,main,xlab,ylab,xlim,ylim,breaks,col,border) 
 # v = It is a vector that contains numeric values.
-# main = 	It indicates the title of the chart.
-# col = 	It indicates the title of the chart.
+# main = It indicates the title of the chart.
+# col = It indicates the title of the chart.
 # border = It is used to set the border color of each bar.
 # xlab =  It is used to describe the x-axis.
 # ylab = It is used to describe the y-axis.
