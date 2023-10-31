@@ -130,6 +130,20 @@ add<-function(a,b){
 
 add(4)
 
+lazy_add <- function(a, b) {
+  print(a)
+  print(b)
+}
+
+# Only calling the function with one argument
+  lazy_add(2+3, 4*5)
+
+#In this example, 2+3 and 4*5 are not computed until they're printed within the function. 
+#This demonstrates lazy evaluation, as the arguments are only evaluated when they are actually used inside the function.
+#lazy_add is a function that takes two arguments, a and b.
+#When the function is called with lazy_add(2+3, 4*5), the expressions 2+3 and 4*5 are not immediately computed.
+#Inside the function, the values of a and b are printed. At this point, the calculations for 2+3 and 4*5 are performed only when the print statements use these variables.
+
 #*******************************Built-In Function******************************
 
 # 1.Math Functions...
