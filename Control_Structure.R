@@ -171,6 +171,9 @@ switch (user,
 # 7.sqrt Function : To find square root of any number.
 
 #***************************Apply(data,margin,fun)***************************
+# In R, the apply() function is used to apply a function to the rows or columns of matrices or arrays. 
+# It's an efficient way to perform operations across rows or columns without explicitly using loops. 
+# The apply() function takes three main arguments: the data structure, the margin (1 for rows, 2 for columns), and the function to be applied.
 # Note = 1 indicate row and 2 indicate column for matrix,array.
 
 # 1.Perform apply() with matrix...
