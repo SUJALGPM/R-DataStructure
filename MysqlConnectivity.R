@@ -26,8 +26,18 @@ dbListTables(con)
 
 # Theory :-
 # Note: Basically we have to functions to send query and get result.
+
 # Note: dbSendQuery() = It is used to send query only.
+# The dbSendQuery() function is used to send a SQL query to the database. 
+# It returns a query handle or object, which can be used to fetch the results of the query.
+# conn: The database connection object.
+# statement: The SQL query that you want to execute.
+
 # Note: fetch() = It is used to get result.
+# The fetch() function is used to retrieve the results of a query from the database. 
+# It fetches a specified number of rows from the result set.
+# res: The query result handle obtained from dbSendQuery().
+# n: The number of rows to fetch. If set to -1 (default), it fetches all remaining rows. Additional parameters or options for fetching.
 
 result<-dbSendQuery(con,"Select * from student")
 data<-fetch(result,n=3) # n=3 means it will print starting 3 rows
