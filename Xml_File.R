@@ -54,7 +54,33 @@ student4<-newXMLNode("Student",attrs = c(ID=4,Name="faisal",dpt="rubber",locatio
 
 # 4.Save the XML document to a file.
 saveXML(file ="S:/PROGRAMS/R script Programs/College.xml",doc)
-  
+
+#*****************************************Write-Xml-File- PART-2*****************************************
+
+data <- data.frame(
+  Name = c("Alice", "Bob", "Charlie"),
+  Age = c(25, 30, 22),
+  City = c("New York", "San Francisco", "Los Angeles")
+)
+
+#create a empty document..
+doc<-newXMLDoc()
+
+#create a root node in empty doc...
+root<-newXMLNode("Students",doc = doc)
+
+#Traverse data from dataframe...
+for(i in 1:nrow(data)){
+  row<-data[i,]
+  subnode<-newXMLNode("student",parent = root)
+  for(colnames in names(data)){
+    newXMLNode(colnames,as.character(row[[colnames]]),parent = subnode)
+  }
+}
+
+#Save xml to our system..
+saveXML(doc,file = "record1.xml")
+
 
 #*****************************************Operations*****************************************
 
