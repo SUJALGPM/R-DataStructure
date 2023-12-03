@@ -63,8 +63,13 @@ emp.data<- data.frame(
   stringsAsFactors = FALSE    
 )   
 
+#*****************************************Create-Operation*****************************************
 dbWriteTable(con,name="team1",value=emp.data[,],overwrite=TRUE)
 
+a <- dbSendQuery(con, "CREATE TABLE parent (
+              id INT,
+              name VARCHAR(20),
+              loc VARCHAR(20))")
 
 #*****************************************Insert-Operation*****************************************
 
